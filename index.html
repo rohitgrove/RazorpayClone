@@ -13,6 +13,20 @@
             padding-top: 12rem;
             padding-bottom: 12rem;
         }
+
+        .companyList {
+            animation: 3s infinite linear moveCompany;
+        }
+
+        @keyframes moveCompany {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: -50%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -105,9 +119,9 @@
             <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto ">
                 <!--left part-->
                 <div class="space-y-8">
-                    <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">Power your finance, grow
-                        your
-                        business</h1>
+                    <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">
+                        To win customer trust, Razorpay is a must
+                    </h1>
                     <div class="w-6 h-1 bg-greenLight"></div>
                     <p class="font-mullish text-[18px] leading-7 text-white opacity-70">
                         Accept payments from customers. Automate payouts to vendors &
@@ -905,6 +919,102 @@ bg-no-repeat bg-cover bg-center mt-14 relative corefeaturesection">
                             Completely online onboarding with minimum documentation.</p>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- join razorpay section -->
+        <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
+            <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row">
+                <!-- left part -->
+                <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+                    <h2 class="font-mullish font-bold text-2xl text-deepBlueHead">
+                        Join the 50,00,000 businesses using Razorpay</h2>
+                    <div class="w-6 h-1 bg-greenLight mb-10 my-4"></div>
+                    <p class="font-mullish opacity-80">We make it easier for you to focus on building great products
+                        while we work on simplifying your
+                        payments. Become one of us by joining thousands of our happy users and simplify the online
+                        payment experience for your customers.
+                    </p>
+                    <p class="font-mullish mt-6 opacity-80">
+                        Focus on your business while we handle the complexities of payments for you.</p>
+                    <button class="bg-lightBlue text-white py-[14px] px-[18px] rounded-md font-mullish font-bold
+                    hover:bg-lightBlue500 transition-all duration-200 flex gap-2 w-40 mt-6">Get Started
+
+                        <svg viewBox="0 0 24 24" focusable="false" class="w-[20px] h-[20px] ">
+                            <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- right part -->
+                <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+                    <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
+                        class="absolute w-full h-[150px] top-0 z-50">
+                    </div>
+                    <img src="./images/comanies.png" alt="" class="absolute h-auto object-cover companyList" loading="lazy">
+                    <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
+                        class="absolute w-full h-[150px] bottom-0 z-50">
+                    </div>
+                </div>
+        </section>
+
+        <!-- Testimoail section -->
+        <section class="relative">
+            <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
+                <img src="./images/feature-section1-dottedrows.png" alt=""
+                    class="absolute w-[200px] top-[8rem] left-[2rem] -z-10">
+                <h2 class="font-mullish font-extrabold text-2xl text-deepBlueHead text-center">An Experience
+                    <br> People Love to Talk About
+                </h2>
+                <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
+
+                <!--left button -->
+                <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2
+    flex justify-center items-center ">
+                    <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
+     mix-blend-multiply">
+                        <i data-feather="chevron-right" class="stroke-[5px] w-6 h-6  text-gray-400 rotate-180"></i>
+                    </div>
+                </button>
+
+                <!--right button -->
+                <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2
+   flex justify-center items-center ">
+                    <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
+         mix-blend-multiply">
+                        <i data-feather="chevron-right" class="stroke-[5px] w-6 h-6  text-gray-400"></i>
+                    </div>
+                </button>
+
+
+                <!-- main content -->
+                <div class="flex flex-row max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
+                    <!-- left image -->
+                    <img src="./images/testimonial.jpg" alt=""
+                    height="320px"
+                    width="320px"
+                    loading="lazy"
+                    class="rounded-xl">
+
+                    <!-- right image -->
+                    <div class="max-w-[400px]">
+                        <img src="./images/quotes.svg" alt="" 
+                        width="35px"
+                        height="40px"
+                        class="-mb-2">
+                        <p class="font-mullish text-3xl font-extralight">An Experience
+                            People Love to Talk About</p>
+                        <a href="#" class="text-grayText italic underline">Learn More</a>
+                        <p class="font-mullish font-extrabold text-2xl">Lorem Ispum</p>
+                        <p class="font-mullish font-medium">CEO xyz Enginring Company</p>
+                        <img src="./images/fake-company-logo.png" alt="" width="80px" height="40px">
+                    </div>
+                </div>
+
+                <!-- 6 dot wala div -->
+                <div>
+                    <div></div>
                 </div>
             </div>
         </section>
